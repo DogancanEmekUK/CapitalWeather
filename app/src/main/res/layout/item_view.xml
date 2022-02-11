@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="item_view">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.dogancanemek.capitalweather.ui.WeatherViewModel" />
+
+        <variable
+            name="weatherFragment"
+            type="com.dogancanemek.capitalweather.ui.WeatherFragment" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sura"
+                android:text="@string/location"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="16dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Name"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/region"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Region"
+                        android:textColor="@color/white"
+                        tools:layout_editor_absoluteX="159dp"
+                        tools:layout_editor_absoluteY="179dp" />
+
+                    <TextView
+                        android:id="@+id/country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Country"
+                        android:textColor="@color/white"
+                        tools:layout_editor_absoluteX="242dp"
+                        tools:layout_editor_absoluteY="138dp" />
+
+                    <TextView
+                        android:id="@+id/lat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Latitude"
+                        android:textColor="@color/white"
+                        tools:layout_editor_absoluteX="148dp"
+                        tools:layout_editor_absoluteY="67dp" />
+
+                    <TextView
+                        android:id="@+id/lon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Longitude"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tz_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Timezone"
+                        android:textColor="@color/white"
+                        tools:layout_editor_absoluteX="28dp"
+                        tools:layout_editor_absoluteY="128dp" />
+
+                    <TextView
+                        android:id="@+id/localtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Local Time"
+                        android:textColor="@color/white"
+                        tools:layout_editor_absoluteX="90dp"
+                        tools:layout_editor_absoluteY="109dp" />
+
+                    <TextView
+                        android:id="@+id/last_updated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Last Updated"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/temp_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sura"
+                    android:text="24°"
+                    android:textColor="@color/white"
+                    android:textSize="64sp" />
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/image_background" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sura"
+                    android:text="Text"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/feelslike_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/sura"
+                    android:text="Feels Like C"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/temp_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Fahrenheit"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/wind_mph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Wind MPH"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/wind_kph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Wind KPH"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/wind_degree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Wind Degree"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/pressure_mb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Pressure MB"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/pressure_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Pressure IN"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/precip_mm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Precipation MM"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/precip_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Precipation IN"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/humidity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Humidity"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/cloud"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Cloud"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/feelslike_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Feels Like F"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vis_miles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Vision Miles"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/vis_km"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Vision KM"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/uv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="UV"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/gust_mph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Gust MPH"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/gust_kph"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sura"
+                        android:text="Gust KPH"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

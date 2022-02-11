@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.CityFragment">
+
+    <data>
+
+        <variable
+            name="cityFragment"
+            type="com.dogancanemek.capitalweather.ui.CityFragment" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <Button
+                android:id="@+id/amsterdam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/amsterdam" />
+
+            <Button
+                android:id="@+id/andorraLaVella"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/andorra_la_vella_andorra" />
+
+            <Button
+                android:id="@+id/ankara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/ankara_turkey" />
+
+            <Button
+                android:id="@+id/athens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/athens" />
+
+            <Button
+                android:id="@+id/belgrade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/belgrade_serbia" />
+
+            <Button
+                android:id="@+id/berlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/berlin" />
+
+            <Button
+                android:id="@+id/bern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/bern_switzerland" />
+
+            <Button
+                android:id="@+id/bratislava"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/bratislava_slovakia" />
+
+            <Button
+                android:id="@+id/brussels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/brussels" />
+
+            <Button
+                android:id="@+id/bucharest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/bucharest_romania" />
+
+            <Button
+                android:id="@+id/budapest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/budapest_hungary" />
+
+            <Button
+                android:id="@+id/chisinau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/chisinau_moldova" />
+
+            <Button
+                android:id="@+id/copenhagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/copenhagen" />
+
+            <Button
+                android:id="@+id/dublin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/dublin_ireland" />
+
+            <Button
+                android:id="@+id/helsinki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/helsinki_finland" />
+
+            <Button
+                android:id="@+id/kiev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/kiev_ukraine" />
+
+            <Button
+                android:id="@+id/lisbon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/lisbon_portugal" />
+
+            <Button
+                android:id="@+id/ljubljana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/ljubljana_slovenia" />
+
+            <Button
+                android:id="@+id/london"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/london" />
+
+            <Button
+                android:id="@+id/luxembourg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/luxembourg_luxembourg" />
+
+            <Button
+                android:id="@+id/madrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/madrid" />
+
+            <Button
+                android:id="@+id/minsk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/minsk_belarus" />
+
+            <Button
+                android:id="@+id/monaco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/monaco_monaco" />
+
+            <Button
+                android:id="@+id/moscow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/moscow_russia" />
+
+            <Button
+                android:id="@+id/oslo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/oslo" />
+
+            <Button
+                android:id="@+id/paris"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/paris" />
+
+            <Button
+                android:id="@+id/podgorica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/podgorica_montenegro" />
+
+            <Button
+                android:id="@+id/prague"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/prague_czechia" />
+
+            <Button
+                android:id="@+id/reykjavik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/reykjavik_iceland" />
+
+            <Button
+                android:id="@+id/riga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/riga_latvia" />
+
+            <Button
+                android:id="@+id/rome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/rome" />
+
+            <Button
+                android:id="@+id/sanMarino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/san_marino_san_marino" />
+
+            <Button
+                android:id="@+id/sarajevo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/sarajevo_bosnia_amp_herzegovina" />
+
+            <Button
+                android:id="@+id/skopje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/skopje_north_macedonia" />
+
+            <Button
+                android:id="@+id/stockholm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/stockholm" />
+
+            <Button
+                android:id="@+id/sofia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/sofia" />
+
+            <Button
+                android:id="@+id/tallinn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/tallinn_estonia" />
+
+            <Button
+                android:id="@+id/tirana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/tirana_albania" />
+
+            <Button
+                android:id="@+id/vaduz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/vaduz_liechtenstein" />
+
+            <Button
+                android:id="@+id/valletta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/valletta_malta" />
+
+            <Button
+                android:id="@+id/vaticanCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/vaticancity_vatican" />
+
+            <Button
+                android:id="@+id/vienna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/vienna_austria" />
+
+            <Button
+                android:id="@+id/vilnius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/vilnius_lithuania" />
+
+            <Button
+                android:id="@+id/warsaw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/warsaw_poland" />
+
+            <Button
+                android:id="@+id/zagreb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/sura"
+                android:gravity="start"
+                android:text="@string/zagreb_croatia" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
